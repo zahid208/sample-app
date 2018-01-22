@@ -1,3 +1,4 @@
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -132,4 +133,31 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+#error_explanation {
+  color: #ff070e;
+  ul {
+    color: #ff0000;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}             #error_explanation {
+                color: #ff070e;
+                ul {
+                  color: #ff070e;
+                  margin: 0 0 30px 0;
+                }
+              }
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
